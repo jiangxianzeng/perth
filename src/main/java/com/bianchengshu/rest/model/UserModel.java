@@ -10,6 +10,10 @@ public class UserModel extends BaseModel {
 
     private int age;
 
+    private double salary;
+
+    private String nickName;
+
     public long getId() {
         return id;
     }
@@ -42,5 +46,11 @@ public class UserModel extends BaseModel {
         this.salary = salary;
     }
 
-    private double salary;
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
 }
