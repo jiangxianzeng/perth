@@ -9,13 +9,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public class UserService {
+public interface UserService {
 
-    @Autowired
-    private UserDao userDao;
-
-    public Integer getUserAgeByName(String userName) {
-
-        return userDao.getUserAgeByname(userName);
-    }
+    public Integer getUserAgeByName(String userName);
 }
