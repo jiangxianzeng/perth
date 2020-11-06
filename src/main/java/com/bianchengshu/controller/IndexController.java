@@ -25,7 +25,7 @@ public class IndexController extends BaseController {
     @RequestMapping(value ="/api", method = RequestMethod.GET)
     public Result getIndex() {
         //public ResponseEntity<?> discover() {
-        Object userAge = userService.getUserAgeByName("123");
+        Integer userAge = userService.getUserAgeByName("123");
 
         logger.info("start..... api.......");
 
