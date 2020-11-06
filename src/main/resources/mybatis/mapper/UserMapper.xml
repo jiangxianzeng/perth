@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.bianchengshu.rest.mapper.UserMapper" >
-    <resultMap id="BaseResultMap" type="com.bianchengshu.rest.model.UserModel" >
+<mapper namespace="com.bianchengshu.mapper.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.bianchengshu.model.UserModel" >
         <id column="id" property="id" jdbcType="BIGINT" />
 
         <result column="age" property="age" jdbcType="BIGINT" />
@@ -28,7 +28,7 @@
         WHERE id = #{id}
     </select>
 
-    <insert id="insertUser" parameterType="com.bianchengshu.rest.model.UserModel" >
+    <insert id="insertUser" parameterType="com.bianchengshu.model.UserModel" >
         INSERT INTO
         t_user
         (age,salary,name, nick_name)
@@ -36,7 +36,7 @@
         (#{age}, #{salary}, #{name}, #{nickName})
     </insert>
 
-    <update id="updateUserById" parameterType="com.bianchengshu.rest.model.UserModel" >
+    <update id="updateUserById" parameterType="com.bianchengshu.model.UserModel" >
         UPDATE
         t_user
         <set>

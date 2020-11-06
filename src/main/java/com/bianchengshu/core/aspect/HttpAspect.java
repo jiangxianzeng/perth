@@ -22,7 +22,7 @@ import java.util.Arrays;
 public class HttpAspect {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut("execution(public * com.bianchengshu.rest.controller.*.*(..))")
+    @Pointcut("execution(public * com.bianchengshu.controller.*.*(..))")
     public void log() {
 
     }
