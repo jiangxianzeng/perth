@@ -1,9 +1,9 @@
-package com.ei.demo.resolver;
+package com.bianchengshu.resolver;
 
 
-import com.ei.demo.dto.AuthorDto;
-import com.ei.demo.dto.CommentDto;
-import com.ei.demo.service.AuthorService;
+import com.bianchengshu.dto.AuthorDto;
+import com.bianchengshu.dto.CommentDto;
+import com.bianchengshu.service.AuthorService;
 import graphql.kickstart.tools.GraphQLResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

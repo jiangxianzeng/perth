@@ -1,9 +1,7 @@
-package com.ei.demo.resolver;
+package com.bianchengshu.resolver;
 
-import com.ei.demo.core.exception.ServiceException;
-import com.ei.demo.core.result.ResultEnum;
-import com.ei.demo.dto.ArticleDto;
-import com.ei.demo.service.ArticleService;
+import com.bianchengshu.dto.ArticleDto;
+import com.bianchengshu.service.ArticleService;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

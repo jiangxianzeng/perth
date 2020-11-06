@@ -1,4 +1,4 @@
-package com.ei.demo.core.filter;
+package com.bianchengshu.core.filter;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
