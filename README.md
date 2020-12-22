@@ -8,6 +8,13 @@ spring boot 框架学习
 1. Spring Boot RestFul API 统一格式返回 + 全局异常处理
 1. Spring Boot 整合GraphQL
 
+
+打包：
+mvn package -P test -Dmaven.test.skip=true
+
+运行：
+java -jar bcs-0.0.1-SNAPSHOT.jar
+
 ##Table:
 ```sql
 CREATE TABLE `t_user` (
