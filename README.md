@@ -8,6 +8,7 @@ spring boot 框架学习
 1. Spring Boot RestFul API 统一格式返回 + 全局异常处理
 1. Spring Boot 整合GraphQL
 1. RestTemplate调用http请求【待完成】
+1. 日志【待完成】
 
 打包：
 mvn package -P test -Dmaven.test.skip=true
