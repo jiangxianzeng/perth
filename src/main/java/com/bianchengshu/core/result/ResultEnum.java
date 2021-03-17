@@ -6,8 +6,8 @@ package com.bianchengshu.core.result;
 public enum ResultEnum {
 
     SUCCESS(0, "success"),
-    UNKNOW_ERROR(-1, "未知错误"),
-    NET_WORK_ERROR(-2, "网络异常，请稍后重试"),
+    UNKNOW_ERROR(1, "未知错误"),
+    NET_WORK_ERROR(2, "网络异常，请稍后重试"),
     PASSWORD_ERROR(10001, "用户名或密码错误"),
     PARAMETER_ERROR(10101, "参数错误");
 
