@@ -10,12 +10,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Optional;
 
+
 /*
 *  过滤器
 * */
 
 @Component
 public class JwtFilter extends OncePerRequestFilter {
+    /**
+     * 日志跟踪标识
+     */
+    private static final String TRACE_ID = "TRACE_ID";
 
     /**
      * 存放Token的Header Key
@@ -25,6 +30,9 @@ public class JwtFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
                                                                                 throws ServletException, IOException {
+        String traceId = IdUtil.simpleUUID();
+        MDC.put(TRACE_ID, traceId);
+                                                                                    
         Optional<HttpServletRequest> optReq = Optional.of(request);
 
         String authToken = optReq.map(req -> req.getHeader(AUTH_HEADER_STRING)).filter(token -> !token.isEmpty())
